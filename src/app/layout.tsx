@@ -6,6 +6,7 @@ import Script from "next/script";
 import NextTopLoader from "nextjs-toploader";
 import Provider from "@/lib/Provider";
 import Navbar from "@/components/Navbar";
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -67,6 +68,7 @@ export default function RootLayout({
           src="https://unmani-vercel.vercel.app/script.js"
           data-website-id="8606e195-da59-401f-bde2-8b6837618dc1"
         ></Script>
+        <Analytics />
       </body>
     </html>
   );
